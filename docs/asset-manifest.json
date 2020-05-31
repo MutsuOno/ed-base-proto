@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/ed-base-proto/static/css/main.7900b4c5.chunk.css",
+    "main.js": "/ed-base-proto/static/js/main.10722fc0.chunk.js",
+    "main.js.map": "/ed-base-proto/static/js/main.10722fc0.chunk.js.map",
+    "runtime-main.js": "/ed-base-proto/static/js/runtime-main.a7313ba3.js",
+    "runtime-main.js.map": "/ed-base-proto/static/js/runtime-main.a7313ba3.js.map",
+    "static/js/2.774c8142.chunk.js": "/ed-base-proto/static/js/2.774c8142.chunk.js",
+    "static/js/2.774c8142.chunk.js.map": "/ed-base-proto/static/js/2.774c8142.chunk.js.map",
+    "index.html": "/ed-base-proto/index.html",
+    "precache-manifest.26fae765130cc632855884ef7b0ab71e.js": "/ed-base-proto/precache-manifest.26fae765130cc632855884ef7b0ab71e.js",
+    "service-worker.js": "/ed-base-proto/service-worker.js",
+    "static/css/main.7900b4c5.chunk.css.map": "/ed-base-proto/static/css/main.7900b4c5.chunk.css.map",
+    "static/js/2.774c8142.chunk.js.LICENSE.txt": "/ed-base-proto/static/js/2.774c8142.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a7313ba3.js",
+    "static/js/2.774c8142.chunk.js",
+    "static/css/main.7900b4c5.chunk.css",
+    "static/js/main.10722fc0.chunk.js"
+  ]
+}
