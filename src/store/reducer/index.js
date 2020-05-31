@@ -14,6 +14,7 @@ export const reducer = (state, action) => {
       return {
         ...state,
         items: action.payload,
+        errorMessage: null,
       };
     case "SEARCH_FAILURE":
       return {

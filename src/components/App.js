@@ -33,7 +33,7 @@ const App = () => {
     axios(
       `https://198182tj3g.execute-api.ap-northeast-1.amazonaws.com/edbaseapi?q=${searchValue}`
     ).then((jsonResponse) => {
-      if (jsonResponse.data.length > 0) {
+      if (jsonResponse.data !== "error") {
         dispatch({
           type: "SEARCH_SUCCESS",
           payload: jsonResponse.data,
@@ -41,7 +41,7 @@ const App = () => {
       } else {
         dispatch({
           type: "SEARCH_FAILURE",
-          error: "error",
+          error: "見つかりません",
         });
       }
     });
@@ -49,20 +49,18 @@ const App = () => {
 
   const { items, errorMessage } = state;
 
-  const retrievedItems = errorMessage ? (
-    <div className="errorMessage">{errorMessage}</div>
-  ) : (
-    items.map((item, index) => <Item key={`${index}`} item={item} />)
-  );
-
   return (
     <div className="App">
       <div className="container">
         <Header text="オンライン授業Lab" />
-
         <Search search={search} />
-
-        <div className="items">{retrievedItems}</div>
+        <div className="items">
+          {errorMessage ? (
+            <div className="errorMessage">{errorMessage}</div>
+          ) : (
+            items.map((item, index) => <Item key={`${index}`} item={item} />)
+          )}
+        </div>
       </div>
     </div>
   );
