@@ -6,38 +6,28 @@
   background-color: #00b5db;
   height: 80px;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: 20px;
+  font-size: 26px;
   color: white;
   padding: 20px;
   margin-bottom: 30px;
 }
 
-* {
-  box-sizing: border-box;
-}
-
-.items {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  flex-direction: row;
-}
-
 .item {
   width: 70%;
   padding: 0.5em 1em;
-  margin: 1em 0.5em;
+  margin: 1em auto;
   background: white;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
   color: #4a4a4a;
 }
 
 .item h2 {
-  padding-left: 0.5em;
+  padding: 0.5em 0.5em;
   text-align: left;
+  line-height: 1.4em;
+  font-size: 20px;
 }
 
 .description {
@@ -53,13 +43,9 @@
 }
 
 .search {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
   justify-content: center;
   margin-top: 10px;
   margin-bottom: 30px;
-  height: 60px;
 }
 
 input[type="submit"] {
@@ -67,47 +53,59 @@ input[type="submit"] {
   color: #fff;
   font-size: 20px;
   background-color: #00b5db;
-  width: 140px;
+  width: 40%;
   margin-left: 5px;
   cursor: pointer;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
+  height: 60px;
+  margin-top: 20px;
 }
 
 input[type="submit"]:hover {
   background-color: #007f9b;
 }
 
-.search > input[type="text"] {
+input[type="text"] {
   width: 60%;
-  min-width: 170px;
   padding-left: 10px;
   font-size: 20px;
   border-color: #4a4a4a;
   border: 2px solid #4a4a4a;
   border-radius: 4px;
+  height: 60px;
 }
 
 input[type="text"]:focus {
   outline: none;
 }
 
-@media screen and (min-width: 694px) and (max-width: 915px) {
+@media screen and (max-width: 767px) {
   .item {
-    max-width: 33%;
+    width: 90%;
+    padding-bottom: 1em;
   }
-}
 
-@media screen and (min-width: 652px) and (max-width: 693px) {
-  .item {
-    max-width: 50%;
+  input[type="submit"] {
+    color: #fff;
+    font-size: 20px;
+    background-color: #00b5db;
+    width: 60%;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    margin-top: 10px;
+    height: 50px;
+    font-size: 18px;
   }
-}
 
-@media screen and (max-width: 651px) {
-  .item {
-    max-width: 100%;
-    margin: auto;
+  input[type="text"] {
+    width: 90%;
+    font-size: 18px;
+    border-color: #4a4a4a;
+    border: 2px solid #4a4a4a;
+    border-radius: 4px;
+    height: 40px;
   }
 }

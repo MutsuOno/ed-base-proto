@@ -14,14 +14,18 @@ const Search = ({ search }) => {
 
   return (
     <form className="search">
-      <input
-        value={searchValue}
-        onChange={handleSearchInputChanges}
-        type="text"
-        placeholder="キーワードを入力（例：zoom）"
-      />
+      <p>
+        <input
+          value={searchValue}
+          onChange={handleSearchInputChanges}
+          type="text"
+          placeholder="キーワードを入力（例：zoom）"
+        />
+      </p>
 
-      <input onClick={callSearchFunction} type="submit" value="検索" />
+      <p>
+        <input onClick={callSearchFunction} type="submit" value="検索" />
+      </p>
     </form>
   );
 };
