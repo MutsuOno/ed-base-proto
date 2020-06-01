@@ -31,7 +31,7 @@ const App = () => {
     });
 
     axios(
-      `https://198182tj3g.execute-api.ap-northeast-1.amazonaws.com/edbaseapi?q=${searchValue}`
+      `https://198182tj3g.execute-api.ap-northeast-1.amazonaws.com/edbaseapi?q=${searchValue}&size=50`
     ).then((jsonResponse) => {
       if (jsonResponse.data !== "error") {
         dispatch({
