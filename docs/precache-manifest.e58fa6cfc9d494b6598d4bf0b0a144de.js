@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a5ce6269f5f469c64fa9e0113cb39df8",
+    "revision": "ae45ca12c92f2e9d778d0f4cc1bfd6f6",
     "url": "/ed-base-proto/index.html"
   },
   {
-    "revision": "882c596c47889c33a10f",
-    "url": "/ed-base-proto/static/css/main.0bd4e3f5.chunk.css"
+    "revision": "96b347ba82abaefb1978",
+    "url": "/ed-base-proto/static/css/main.12c6c5d6.chunk.css"
   },
   {
     "revision": "295415f677f1747873fe",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ed-base-proto/static/js/2.774c8142.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "882c596c47889c33a10f",
+    "revision": "96b347ba82abaefb1978",
     "url": "/ed-base-proto/static/js/main.34b27784.chunk.js"
   },
   {
