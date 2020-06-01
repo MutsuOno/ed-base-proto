@@ -42,8 +42,8 @@
   border-radius: 4px;
   border: none;
   height: 50px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 14px;
+  margin-bottom: 14px;
 }
 
 .link-button:hover {
@@ -135,5 +135,6 @@ input[type="text"]:focus {
 
   .link-button {
     width: 70%;
+    font-size: 14px;
   }
 }
